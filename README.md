@@ -10,20 +10,17 @@ It includes **training, evaluation, and inference scripts**, as well as a **Fast
 ```
 Rice-Classification-ResNet50/
 │
-├── src/
-│   └── main.py                   # Training, validation, testing, inference
-│
 ├── api/
-│   └── rice_classifier_api.py    # FastAPI deployment script
+│   └── rice_classifier_api.py      # FastAPI deployment script
 │
 ├── models/
-│   └── resnet50_rice_classifier.pth   # Trained weights (not included in repo)
+│   └── resnet50_rice_classifier.pth      # Trained weights (not included in repo)
 │
 ├── notebooks/
-│   └── Rice_Classification.ipynb # Jupyter Notebook workflow
+│   └── Rice_Classification_with_ResNet50.ipynb      # Jupyter Notebook workflow
 │
-├── requirements.txt              # Dependencies
-├── README.md                     # Documentation
+├── requirements.txt
+├── README.md
 └── .gitignore
 ```
 
