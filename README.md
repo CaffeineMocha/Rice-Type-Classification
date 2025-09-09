@@ -1,11 +1,11 @@
-# 🍚 Rice Type Classification with ResNet50
+# Rice Type Classification with ResNet50
 
 This project implements a **deep learning pipeline** for classifying **5 rice varieties** using **transfer learning with ResNet50** in PyTorch.  
 It includes **training, evaluation, and inference scripts**, as well as a **FastAPI deployment** for serving the model.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 Rice-Classification-ResNet50/
@@ -29,7 +29,7 @@ Rice-Classification-ResNet50/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - The project uses the **Rice Image Dataset**, containing 5 classes:
   - Arborio  
@@ -38,12 +38,12 @@ Rice-Classification-ResNet50/
   - Jasmine  
   - Karacadag  
 
-⚠️ The dataset is **not included** in this repo.  
+The dataset is **not included** in this repo (See at the bottom page of this README).  
 You must download it manually and place it under `data/` or update the dataset path in the code.
 
 ---
 
-## 🚀 Setup
+## Setup
 
 1. Clone the repository:
    ```bash
@@ -64,7 +64,7 @@ You must download it manually and place it under `data/` or update the dataset p
 
 ---
 
-## 🏋️ Training & Evaluation
+## Training & Evaluation
 
 Run the training pipeline:
 
@@ -81,7 +81,7 @@ The script will:
 
 ---
 
-## 📈 Results
+## Results
 
 - Best Validation Accuracy: **XX%**
 - Final Test Accuracy: **XX%**
@@ -93,7 +93,7 @@ Example confusion matrix:
 
 ---
 
-## 🔮 Inference (from Notebook or Script)
+## Inference (from Notebook or Script)
 
 Use the `predict_image` function to classify a new image:
 
@@ -111,7 +111,7 @@ print(predicted_class, confidence)
 
 ---
 
-## 🌐 Deployment with FastAPI
+## Deployment with FastAPI
 
 We provide a **FastAPI app** for model serving (`rice_classifier_api.py`).
 
@@ -137,7 +137,7 @@ Jasmine (97.53%)
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python 3.9+
 - PyTorch
 - Torchvision
@@ -148,11 +148,11 @@ Jasmine (97.53%)
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## ✨ Acknowledgments
+## Acknowledgments
 - [Rice Image Dataset](https://www.muratkoklu.com/datasets/)  
 - PyTorch team for ResNet50 pretrained weights  
