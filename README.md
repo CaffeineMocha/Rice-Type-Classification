@@ -148,5 +148,5 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ---
 
 ## Acknowledgments
-- [Rice Image Dataset](https://www.muratkoklu.com/datasets/)  
+- [Rice Image Dataset](https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset)  
 - PyTorch team for ResNet50 pretrained weights  
