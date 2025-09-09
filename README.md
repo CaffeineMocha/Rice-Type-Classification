@@ -1,7 +1,7 @@
 # Rice Type Classification with ResNet50
 
 This project implements a **deep learning pipeline** for classifying **5 rice varieties** using **transfer learning with ResNet50** in PyTorch.  
-It includes **training, evaluation, and inference scripts**, as well as a **FastAPI deployment** for serving the model.
+It includes **training, evaluation, and inference code** in Jupyter Notebook, as well as a **FastAPI deployment** for serving the model.
 
 ---
 
@@ -35,8 +35,8 @@ Rice-Classification-ResNet50/
   - Jasmine  
   - Karacadag  
 
-The dataset is **not included** in this repo (See at the bottom page of this README).  
-You must download it manually and place it under `data/` or update the dataset path in the code.
+The dataset is **not included** in this repo (see acknowledgments below).  
+You must download it manually and place it under `data/` or update the dataset path in the notebook.
 
 ---
 
@@ -63,13 +63,13 @@ You must download it manually and place it under `data/` or update the dataset p
 
 ## Training & Evaluation
 
-Run the training pipeline:
+Open and run the notebook:
 
 ```bash
-python src/main.py
+jupyter notebook notebooks/Rice_Classification_with_ResNet50.ipynb
 ```
 
-The script will:
+The notebook will:
 - Train ResNet50 with transfer learning
 - Evaluate on validation/test sets
 - Save the best model to `models/resnet50_rice_classifier.pth`
@@ -80,29 +80,26 @@ The script will:
 
 ## Results
 
-- Best Validation Accuracy: **XX%**
-- Final Test Accuracy: **XX%**
-- Macro F1 Score: **XX%**
+- Best Validation Accuracy: **XX%**  
+- Final Test Accuracy: **XX%**  
+- Macro F1 Score: **XX%**  
 
-Example confusion matrix:
-
-![Confusion Matrix](docs/confusion_matrix.png)
+*(Replace with your actual results after training.)*
 
 ---
 
-## Inference (from Notebook or Script)
+## Inference (from Notebook)
 
 Use the `predict_image` function to classify a new image:
 
 ```python
-from src.main import predict_image
 from PIL import Image
 import io
 
 with open("example.jpg", "rb") as f:
     image_bytes = f.read()
 
-predicted_class, confidence = predict_image(image_bytes, model, idx_to_class, device)
+predicted_class, confidence = predict_image(image_bytes)
 print(predicted_class, confidence)
 ```
 
